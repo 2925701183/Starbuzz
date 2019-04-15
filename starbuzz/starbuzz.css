@@ -1,3 +1,14 @@
+
+
+#allcontent{
+  width: 800px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #675c47;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body { 
   background-color: #b5a789;
   font-family:      Georgia, "Times New Roman", Times, serif;
@@ -7,33 +18,33 @@ body {
 
 #header {
   background-color: #675c47;
-  margin:           10px;
+  margin:           10px 10px 0px 10px;
   height:           108px;
 }
 
 #main {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
-  position: absolute;
-  top: 128px;
-  right: 0px;
-  width: 600px;
-  left:30px;
+  vertical-align: top;
+  
+  
 }
 
 #sidebar {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
-  width: 280px;
+  vertical-align: top;
+  margin: 0px 10px 10px 10px;
   float: right;
-  position: absolute;
+  
   top: 128px;
   right: 0px;
   width: 280px;
+  
 }
 
 #footer {
@@ -41,9 +52,9 @@ body {
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           10px;
+  margin:           0px 10px 10px 10px;
   font-size:        90%;
-  clear: right;
+  
 }
 
 h1 {
@@ -68,11 +79,29 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
-#allcontent {
-  width: 800px;
-  padding-top:5px;
-  padding-bottom: 5px;
-  background-color: #675c47;
-  margin-left: auto;
-  margin-right: auto;
+
+#annoyingad{
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 400px;
+
+}
+
+#tableContainer{
+  display: table;
+  border-spacing: 10px;
+
+}
+#tableRow{
+  display: table-row;
+}
+
+#drinks{
+  float: left;
+  background-color: #efe5d0;
+  width: 100px;
+  padding: 15px;
+  vertical-align: top;
+
 }
