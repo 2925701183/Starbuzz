@@ -105,3 +105,17 @@ div#tablerow{
   height: 100px;
   background-position: -400px;
 }
+#award {
+    position: absolute;
+    top: 30px;
+    left: 365px;
+
+}
+#coupon{
+      position: fixed;
+      top:350;
+      left:-90px;   
+}
+#coupon a, img{
+      border:none;
+}
