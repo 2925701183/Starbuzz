@@ -5,36 +5,37 @@ body {
   margin:           0px;
 }
 
-#header {
+header {
   background-color: #675c47;
-  margin:           10px;
+  margin:           10px 10px 0px 10px;
   height:           108px;
 }
 
-#main {
+section#main, section#blog {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
+  vertical-align: top;
+
 }
 
-#sidebar {
+aside {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
-  width: 280px;
-  float: right;
+  vertical-align: top;
 }
 
-#footer {
+footer {
   background-color: #675c47;
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           10px;
+  margin:           0px 10px 10px 10px;
   font-size:        90%;
-  clear: right;
+  clear: left;
 }
 
 h1 {
@@ -58,4 +59,80 @@ a:visited {
   color:            #675c47;
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
+}
+
+div#tableContainer{
+  display: table;
+  border-spacing: 10px;
+}
+div#tableRow{
+  display: table-row;
+}
+section#drinks{
+  display: table-cell;
+  background-color: #efe5d0;
+  width:20%;
+  padding: 15px;
+  vertical-align: top;
+}
+.headerImageLeft{
+  position:absolute;
+  z-index: 2;
+  display: inline-block;
+  /* float: left; */
+  background-image: url(images/header.gif);
+  width: 400px;
+  height:100px;
+}
+.headerImageright{
+  /* display: inline-block; */
+  float:right;
+  background-image: url(images/header.gif);
+  width: 400px;;
+  height:100px;
+  background-position: -400px,0px;
+}
+
+#coupon{
+  position: fixed;
+  top:350px;
+  left:-200px;
+  transition: all ls linear;
+}
+#coupon:hover{
+  left:0px;
+}
+#coupon img{
+  border: none;
+}
+nav ul{
+  background-color: #efe5d0;
+  margin:10PX 10PX 0PX 10PX;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+}
+nav ul li{
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+nav ul li a:link, nav ul li a:visited{
+  color: #954b4b;
+  border-bottom: none;
+  font-weight: bold;
+}
+nav ul li.selected{
+  background-color: #c8b99c;
+}
+nav{
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+}
+header.top{
+  background-color: #675c47;
+  margin:           10px 10px 0px 10px;
+  height:           108px;
+}
+header.top img#headerSlogan{
+  float: right;
+
 }
