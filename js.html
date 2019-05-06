@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p id='amao'>我是一段文字</p>
+  <script>
+  document.write("<h1> hello world !</h1>")
+  var a =10 
+  var b =20
+  document.write(a+b)
+  document.write('<br>')
+  var i =0
+  while(i<=10){
+    document.write(i+ '<br>')
+    i++
+  }
+  document.write('<br>')
+  var x =20;
+  if(x >20){ //if x>20 then
+    document.write('x是一个大于20的数')
+  }else{
+    document.write('x是小于等于20的数')
+  }
+  document.write('<br>')
+  function whoisbigger(x,y){
+    if(x>y){
+      return x
+    }else {
+      return y
+    }
+  }
+  document.write(whoisbigger(1,2))
+  document.write('<br>')
+  document.write(whoisbigger(2,12))
+  document.write('<br>')
+  document.write(whoisbigger(223,2))
+  document.write('<br>')
+  document.write(whoisbigger(555,222))
+  document.write('<br>')
+  document.write(whoisbigger(5556,1234))
+  document.write('<br>')
+  document.write(whoisbigger(123,234))
+  document.write('<br>'+Math.random())
+  document.write('<br>'+Math.random())
+  document.write('<br>'+Math.random())
+  document.write('<br>'+Math.random())
+  document.write('<br>'+Math.random())
+  document.write('<br>'+Math.floor(math.random()*10))
+  document.getElementById('amao').innerHTML='我才是被显示的文字'
+  </script>
+</body>
+</html>
