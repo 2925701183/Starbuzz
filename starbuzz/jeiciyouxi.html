@@ -11,12 +11,16 @@
  var person =['赵日天','小白','李明']
  var ground =['酒店','海滩','广场']
  var thing =['喝水','滑雪','玩游戏']
- var p,g,t
-p=Math.floor(math.random()*person.length)
-g=Math.floor(math.random()*ground.length)
-t=Math.floor(math.random()*thing.length)
+ 
+ function foo(arr){
+   i = Math.floor(Math.random()*arr.length)
+   console.log(arr[i])
+ }
 
- document.write(person[p]+'在'+ground[g]+thing[t])
+foo(person)
+foo(ground)
+foo(thing)
+ 
  </script>
 </body>
 </html>

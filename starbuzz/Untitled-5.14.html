@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var car = {
+      color: 'red',
+      energy :40,
+      speed:120,
+      stop:function() {
+        this.speed=0
+      }
+    }
+
+    car.stop()
+    document.write(car.speed)
+
+    car.speed()
+    
+    document.write('aaaaa')
+    theElement = document.getElementById('headText')
+    theElement.innerHTML = 'wss'
+    </script>
+</body>
+</html>
